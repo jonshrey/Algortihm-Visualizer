@@ -1,0 +1,112 @@
+/* Reset some basic elements to remove default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, div, span, button, input, select {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color and font for the whole app */
+body {
+  background-color: #f0f2f5;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Style for the main App component */
+.App {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Header styling */
+h1 {
+  color: #333333;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+/* Visualizer container */
+.visualizer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Controls container */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+/* Visualizer bars */
+.visualizer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Style for individual bars */
+.bar {
+  width: 20px;
+  background-color: lightblue;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 4px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button styling */
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Input range styling */
+input[type="range"] {
+  width: 150px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+/* Select styling */
+select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+}
